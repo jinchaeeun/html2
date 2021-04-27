@@ -1,8 +1,7 @@
-/* �ʱ�ȭ */
 @import url('https://fonts.googleapis.com/earlyaccess/notosanskr.css');
 
 html {overflow-y:scroll}
-body {margin:0;padding:0;font-size:0.75em; font-family:'Noto Sans KR','Malgun Gothic', dotum, sans-serif; background:#f5f5f5;}
+body {margin:0;padding:0;font-size:0.75em; font-family:'Noto Sans KR','Malgun Gothic', dotum, sans-serif; }
 html, h1, h2, h3, h4, h5, h6, form, fieldset, img {margin:0;padding:0;border:0}
 h1, h2, h3, h4, h5, h6 {font-size:17px; font-family:'Noto Sans KR','Malgun Gothic', dotum, sans-serif}
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block}
@@ -32,3 +31,131 @@ img {
     height: auto;
     width: auto\9;
 }
+
+	/* 헤더 고정*/
+	.header{transition: all 0.3s;}
+	.header.fixed{ position:fixed; top: 0; left: 0; width: 100%; z-index:9999; background: #ccc;}
+
+	.header{background: white; border-bottom: 1px solid #ccc;} /* position: fixed; width: 100%; z-index:9999;*/
+	.header .header-box{overflow: hidden; padding: 10px 10px; }
+	.header h1{float: left;}
+	.header h1 a{display: block; padding: 10px;} /* 블록 형태로 만들어주고 padding을 줘서 클릭할 수 있는 부분 넓게 만들어 줌*/
+
+	.header .gnb{width: 400px; margin: 8px auto 0;}
+	.header .gnb > ul > li{float: left; margin: 0 10px;} /*가로 정렬*/
+	.header .gnb > ul > li > a{display: block; padding: 10px; font-size:16px; font-weight: 500;}
+	.header .gnb > ul > li > a:hover{color: #DDA0DD;}
+	.header .tnb{float: right;  margin-top: 6px;}
+	.header .tnb > ul > li{float: left; }  /*가로 정렬*/
+	.header .tnb > ul > li > a{display: block; padding: 10px;}
+
+	.header-box img {max-width: 66px; max-height: 42px;}
+
+	.main-visual{text-align:center;  height: 900px; background: url('../img/forest.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	/*
+	배경사진 윛 ㅣ좌우 상하
+	background-position: 10px 10px;
+	*/
+	}
+	.main-visual h2{font-size:45px; padding-top:309px; color: #fff;}
+	.main-visual p{font-size:25px;  color: #fff;}
+	.main-visual p span{display: block;}
+	.fa{color: #554925;}
+
+	.num-data{}
+	.numbers-wrap{background: #fff; padding: 100px 0;}
+	.numbers{text-align: center; max-width: 1200px; margin: 0 auto;}
+	
+	.numbers h2{font-size:35px;}
+	.numbers p{font-size:20px; display: block;}
+	.numbers ul{ margin-top: 40px;}
+	.numbers ul li{display: inline-block; width: 23%; }
+	.numbers ul li p{font-size:35px; border-bottom: 1px solid #e1e1e1; padding-bottom: 10px background: #f1f1f1; margin-bottom: 10px;}
+	.numbers ul li p i{font-size:15px; font-style: normal; }
+	.numbers ul li p i a{color: #5e5333;}
+	.numbers ul li span{color: #888;}
+
+	.slide-banner{background: #fff;}
+	.slide-banner .swiper-container{max-width: 1200px; margin: 24px auto 137px auto;}
+	.slide-banner .swiper-slide{max-height:600px; overflow: hidden;}
+	.slide-banner .swiper-slide img{width: 100%; clip:rect(500px 0 0 0)}
+	
+	.main-gallery{max-width: 2000px; margin: 88px auto;}
+	.main-gallery ul{overflow: hidden; }
+	.main-gallery li{float: left; width: 33.33%; padding: 31px;}
+	.main-gallery li > div{border: 2px solid #fffaea;}
+	.main-gallery li > div .thum{}
+	.main-gallery li > div .info { text-align: center; margin: 27px 0;}
+	.main-gallery li > div .info h3{ color: #fffaea;}
+	.main-gallery li > div .info p{color: #fffaea; margin: 10px 0;}
+
+	.main-gallery li > div .info span{display: inline-block; transition: all 0.3s; overflow:hidden; width: 30px; height: 30px; line-height:28px; border: 2px solid #fff7ddd9; border-radius: 50%;}
+	.main-gallery li > div .info span u{display: none;}
+	.main-gallery li:hover > div .info span{width: 110px; border-radius: 15px; background: #5b593f; color: #fff; border:0} 
+	.main-gallery li:hover > div .info span u{display: inline-block;}
+	.m-g-box{background: #a19e7b; padding: 112px 0;}
+	.m-g-box h2{text-align: center; font-size:35px; color: #45482a;}
+
+	.footer{padding: 10px; background: #6d6b58;}
+	.footer > div {padding: 10px; max-width: 1200px; margin: 0 auto; overflow: hidden;}
+
+	.footer > div > div {float:left;} /*float:left를 주면 그 상위에 overflow hidden을 줘야 깨지지않는다*/
+	.footer > div > div.f-logo{padding: 10px; margin: 10px;}
+	.footer > div > div.f-logo h1 {display: inline-block;}
+	.footer > div > div.f-logo span {color: #fff; display: inline-block; vertical-align: middle;} /*span은 자기가 block이라 생각안함 */
+	.footer > div > div.f-logo h1 a img{max-width: 150px; max-height: 40px;}
+	.footer > div > div.f-copy{padding: 10px; margin: 20px; color: #fff;}
+
+
+
+ 	.snb-wrap{text-align: center;}
+	.snb-wrap > div{max-width: 1200px; margin: 0 auto; background: #fff;}
+	.snb-wrap ul{display: table; width: 100%;}
+	.snb-wrap li{display: table-cell; width: 33.33%;}
+	.snb-wrap li:hover span:before{width: 100%; left: 0; }
+	.snb-wrap li:hover span:after{opacity: 1;}
+	
+	/*on 설정되어있는 탭에 표시해주기*/
+	.snb-wrap li.on span:before{width: 100%; left: 0;}
+	.snb-wrap li.on span:after{opacity: 1;}
+	.snb-wrap li.on a{font-weight: 600;}
+	
+	.snb-wrap li > a{display: block; padding: 20px; font-size:15px; border-right: 1px solid #e1e1e1;}
+	.snb-wrap li > a span{display: block; position: relative;}
+	.snb-wrap li > a span:before{content:""; width: 0%; height: 3px; background: #000; position: absolute; left: 0; bottom: -10px; transition: all 0.3s}
+	.snb-wrap li > a span:after{
+		opacity:0; content:""; width: 0; height: 0; border-top: 0 solid transparent; border-bottom: 5px solid #000; border-left: 5px solid transparent; border-right: 5px solid transparent; 
+		position: absolute; left: 50%; transform:translateX(-50%); /*pos, left, trans 세개 한번에 쓰면 가운데 정렬이된다*/
+		bottom: -7px;
+	}
+
+	/*notice_list.html*/
+	.notice-wrap{max-width: 1200px; margin:20px auto; }
+	.notice-box{max-width: 1200px; margin: 20px auto;}
+	
+	.notice-box li{display: table; width: 100%;}
+	.table-hd{border-top: 2px solid #000; background: #a19e7b; text-align: center;}
+	.table-bd{text-align: center;}
+	.notice-box li div{display: table-cell; width: 25%; border-bottom: 1px solid #000;}
+	
+	.notice-wrap ul li > div.no{width: 10%;}
+	.notice-wrap ul li > div.title{width: 50%;}
+	.notice-wrap ul.table-bd .title a:hover{text-decoration: underline; color: #90a17e;}
+	.notice-wrap ul li > div.name{width: 20%;}
+	.notice-wrap ul li > div.date{width: 20%;}
+	
+	.paging{margin: 20px 0;}
+	.paging ul{text-align: center;}
+	.paging ul li{display: inline-block; margin: 5px 0px;}
+	.paging ul li a{display: block; padding: 5px 10px; border: 1px solid black; color:black; background: white;}
+	.paging ul li.on a{background: #5b593f; color: white; border: 1px solid #000;}
+	
+	.table-btn{text-align: right; margin: 10px auto;}
+	.table-btn a{display: inline-block; background: #5b593f; color: #fff; padding: 5px 10px;}
+	
+	.search-box {text-align: right; margin: 10px 0;} box 자체 정렬 float:right;} /*요소들을 정리할 때는 text-align*/
+	.search-box input{width:100px; border: 1px solid #ccc; height: 30px;}
+	.search-box button{border: 1px solid #000; height: 30px; padding: 0 20px; background: #5b593f; color: #fff;}

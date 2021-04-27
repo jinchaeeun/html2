@@ -1,103 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
- <head>
-  <meta charset="UTF-8">
-  <meta name="Generator" content="EditPlus">
-  <meta name="Author" content="">
-  <meta name="Keywords" content="">
-  <meta name="Description" content="">
-  <!-- 반응형 (기기 해상도별)-->
-  <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0, user-scalable=yes">
+<!-- 상단 헤더 불러오기 -->
+<?php include('./header.php'); ?>
 
-  <title>jinchaeeun</title>
-
-  <script src="./js/jquery-1.12.4.min.js"></script>
-  <script src="./js/jquery-ui.min.js"></script>
-
-  <script src="./js/swiper.min.js"></script>
-  <link rel="stylesheet" href="./js/swiper.min.css">
-
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  
-  <!-- 스크롤시 상단 fixed -->
-  <script src="./js/autofix.js"></script>
-  
-  <!-- fullfage -->
-  <script src="./js/fullpage.min.js"></script>
-  <link rel="stylesheet" href="./js/fullpage.min.css">
-  <link rel="stylesheet" href="./css/style.css">
-  
-  <!-- 모바일 -->
-  <link rel="stylesheet" media="screen and (max-width: 480px)" href="./css/480.css">
-  <!-- 태블릿 세로--> 
-  <link rel="stylesheet" media="screen and (min-width: 481px) and (max-width: 720px)" href="./css/720.css">
-  
-  <!-- 태블릿 가로-->
-  <link rel="stylesheet" media="screen and (min-width: 721px) and (max-width: 1024px)" href="./css/1024.css">
-  <!-- PC -->
-  <link rel="stylesheet" media="screen and (min-width: 1025px)" href="./css/pc.css">
-</head>
-
-<style>
-	.header{background: #fff; border-bottom: 1px solid #ccc;}
-	.header .header-box{overflow: hidden; padding: 10px 10px;}
-	.header h1{float: left;}
-	.header h1 a{display: block; padding: 10px;} /* 블록 형태로 만들어주고 padding을 줘서 클릭할 수 있는 부분 넓게 만들어 줌*/
-
-	.header .gnb{width: 400px; margin: 8px auto 0;}
-	.header .gnb > ul > li{float: left; margin: 0 10px;} /*가로 정렬*/
-	.header .gnb > ul > li > a{display: block; padding: 10px; font-size:16px; font-weight: 500;}
-	.header .gnb > ul > li > a:hover{color: #DDA0DD;}
-	.header .tnb{float: right;  margin-top: 6px;}
-	.header .tnb > ul > li{float: left; }  /*가로 정렬*/
-	.header .tnb > ul > li > a{display: block; padding: 10px;}
-
-	img { max-width: 66px; max-height: 42px;}
-
-	.main-visual{text-align:center;  height: 900px; background: url('./img/forest.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	/*
-	배경사진 윛 ㅣ좌우 상하
-	background-position: 10px 10px;
-	*/
-	}
-	.main-visual h2{font-size:45px; padding-top:309px; color: #fff;}
-	.main-visual p{font-size:25px;  color: #fff;}
-	.main-visual p span{display: block;}
-
-
-</style>
-<body>
-	<!-- 콘텐츠 시작 -->
-	<div class="header">
-		<!--로고, 메뉴-->
-		<div class="header-box"> <!--스타일을 입힐 수 있는 여지를 줌-->
-			<h1><a href="./index.html"><img src="./img/logo.jpg" alt="JinChaeEun"></a></h1>
-			<div class="tnb">
-				<ul class="tnb"> <!--tnb-->
-					<li><a href="#none">로그인</a></li>
-					<li><a href="#none">회원가입</a></li>
-					<!-- 					
-					<li><a href="#none">로그아웃</a></li>
-					<li><a href="#none">정보수정</a></li>
-					 -->				
-				</ul>
-			</div>
-			<div class="gnb"> <!--general navigation bar-->
-				<ul>
-					<li><a href="#none">회사소개</a></li>
-					<li><a href="#none">고객센터</a></li>
-					<li><a href="#none">예약하기</a></li>
-					<li><a href="#none">예약확인</a></li>
-				</ul>
-			</div>
-			
-		</div>
-
-	</div>
 	<div class="contents">
 		<!--내용 출력-->
 		<div class="main-visual">
@@ -106,22 +9,14 @@
 			</div>
 
 			<!--메인 비주얼-->
-			<h2 data-aos="fade-down" data-aos-delay="1000">Hi there It's me.</h2>
+			<h2 data-aos="fade-down" data-aos-delay="1000">Hi there. It's me.</h2>
 			<p data-aos="fade-up">
 				<span data-aos="fade-up" data-aos-delay="300">열정 가득한 개미가 베짱이가 되고자합니다.</span>
 				<span data-aos="fade-up" data-aos-delay="300">그 과정은 완벽하지 않아 자주 부서졌습니다.</span>
 				<span data-aos="fade-up" data-aos-delay="300">부서져도 좋은 이유는 산산조각을 얻을 수 있기 때문입니다.</span>
 			</p>
 		</div>
-<style>
-	.num-data{}
-	.num-data ul{text-align: center; }
-	.num-data ul li{display: inline-block; margin: 5px 120px; }
-	.numbers{text-align: center; margin: 40px;}
-	.numbers h2{font-size:40px;}
-	.numbers p{font-size:20px; display: block;}
-	.num-data p{font-size:20px; display: block;}
-</style>
+
 		<div class="numbers-wrap">
 			<div class="numbers">
 				<h2>SKILLS</h2>
@@ -129,19 +24,19 @@
 				<div class="num-data">
 					<ul>
 						<li>
-							<p>Application</p>
+							<p>Application <i>개</i> </p>
 							<span>C#, Java, Python</span>
 						</li>
 						<li>
-							<p>Frontend</p>
+							<p>Frontend<i>개</i> </p>
 							<span>CSS, JavaScript, Illustrator, Photoshop</span>
 						</li>
 						<li>
-							<p>Backend</p>
+							<p>Backend<i>개</i> </p>
 							<span>Php, MySQL, Ms-SQL, Oracle</span>
 						</li>
 						<li>
-							<p>Etc</p>
+							<p>Etc<i>개</i> </p>
 							<span>하단 설명</span>
 						</li>
 					</ul>
@@ -150,17 +45,171 @@
 			</div>
 		</div>
 
+		<div class="slide-banner">
+			
+		 <!-- Swiper -->
+		  <div class="swiper-container">
+			<div class="swiper-wrapper">
+			  <div class="swiper-slide"><img src="./img/tree_night.jpg"></div>
+			  <div class="swiper-slide"><img src="./img/mountains.jpg"></div>
+			</div>
+			<!-- Add Pagination -->
+			<div class="swiper-pagination swiper-pagination-white"></div>
+			<!-- Add Arrows -->
+			<div class="swiper-button-next swiper-button-white"></div>
+			<div class="swiper-button-prev swiper-button-white"></div>
+		  </div>
+
+		  <!-- Initialize Swiper -->
+		  <script>
+			var swiper = new Swiper('.swiper-container', {
+			  autoHeight: true,
+			  navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			  },
+			
+			  autoplay: {
+				delay: 2500,
+				disableOnInteraction: false,
+			  },
+			});
+		  </script>
+		</div>
 
 
+		<div class="main-gallery-wrap">
+			<div class="m-g-box">
+				<h2>GALLERY</h2>
+
+				<div class="main-gallery">
+					<ul>
+						<li>
+							<div>
+								<div class="thum">
+									<a href="#none">
+										<img src="./img/forest.jpg" alt="">
+									</a>
+								</div>
+								<div class="info">
+									<a href="#none">
+										<h3>게시물 제목</h3>
+										<p>게시물 내용 출력 부분</p>
+										<span>
+											<i class="fa fa-eye" aria-hidden="true"></i>
+											<u>Link</u>
+										</span>
+									</a>
+
+								</div>
+							</div>
+						</li>
+						<li>
+							<div>
+								<div class="thum">
+									<a href="#none">
+										<img src="./img/forest.jpg" alt="">
+									</a>
+								</div>
+								<div class="info">
+									<a href="#none">
+										<h3>게시물 제목</h3>
+										<p>게시물 내용 출력 부분</p>
+										<span>
+											<i class="fa fa-eye" aria-hidden="true"></i>
+											<u>Link</u>
+										</span>
+									</a>
+
+								</div>
+							</div>
+						</li>
+						<li>
+							<div>
+								<div class="thum">
+									<a href="#none">
+										<img src="./img/forest.jpg" alt="">
+									</a>
+								</div>
+								<div class="info">
+									<a href="#none">
+										<h3>게시물 제목</h3>
+										<p>게시물 내용 출력 부분</p>
+										<span>
+											<i class="fa fa-eye" aria-hidden="true"></i>
+											<u>Link</u>
+										</span>
+									</a>
+
+								</div>
+							</div>
+						</li>
+						<li>
+							<div>
+								<div class="thum">
+									<a href="#none">
+										<img src="./img/forest.jpg" alt="">
+									</a>
+								</div>
+								<div class="info">
+									<a href="#none">
+										<h3>게시물 제목</h3>
+										<p>게시물 내용 출력 부분</p>
+										<span>
+											<i class="fa fa-eye" aria-hidden="true"></i>
+											<u>Link</u>
+										</span>
+									</a>
+
+								</div>
+							</div>
+						</li>
+						<li>
+							<div>
+								<div class="thum">
+									<a href="#none">
+										<img src="./img/forest.jpg" alt="">
+									</a>
+								</div>
+								<div class="info">
+									<a href="#none">
+										<h3>게시물 제목</h3>
+										<p>게시물 내용 출력 부분</p>
+										<span>
+											<i class="fa fa-eye" aria-hidden="true"></i>
+											<u>Link</u>
+										</span>
+									</a>
+
+								</div>
+							</div>
+						</li>
+						<li>
+							<div>
+								<div class="thum">
+									<a href="#none">
+										<img src="./img/forest.jpg" alt="">
+									</a>
+								</div>
+								<div class="info">
+									<a href="#none">
+										<h3>게시물 제목</h3>
+										<p>게시물 내용 출력 부분</p>
+										<span>
+											<i class="fa fa-eye" aria-hidden="true"></i>
+											<u>Link</u>
+										</span>
+									</a>
+
+								</div>
+							</div>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+
+		</div>
 	</div>
-	<div class="footer">
-		<!--하단 정보-->
-	</div>
-	
-	<!-- 콘텐츠 끝 -->
-
-	<script>
-		AOS.init();
-	</script>
-</body>
-</html>
+<!-- 하단 헤더 불러오기 -->
+<?php include('./footer.php'); ?>

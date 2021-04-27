@@ -12,13 +12,13 @@
   <title>jinchaeeun</title>
 
 
-<script src="./js/jquery-1.12.4.min.js"></script>
-<script src="./js/jquery-ui.min.js"></script>
+<script src="../js/jquery-1.12.4.min.js"></script>
+<script src="../js/jquery-ui.min.js"></script>
 
-<script src="./js/swiper.min.js"></script>
-<link rel="stylesheet" href="./js/swiper.min.css">
+<script src="../js/swiper.min.js"></script>
+<link rel="stylesheet" href="../js/swiper.min.css">
 
-<script src="./js/autofix.js"></script> <!-- jquery를 먼저 불러와야한다. -->
+<script src="../js/autofix.js"></script> <!-- jquery를 먼저 불러와야한다. -->
 
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -28,18 +28,18 @@
 
 <!--fullpage-->
 
-<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="../css/style.css">
 
 <!-- 모바일 -->
-<link rel="stylesheet" media="screen and (max-width: 480px)" href="./css/480.css">
+<link rel="stylesheet" media="screen and (max-width: 480px)" href="../css/480.css">
 
 <!-- 태블릿 세로--> 
-<link rel="stylesheet" media="screen and (min-width: 481px) and (max-width: 720px)" href="./css/720.css">
+<link rel="stylesheet" media="screen and (min-width: 481px) and (max-width: 720px)" href="../css/720.css">
 
 <!-- 태블릿 가로-->
-<link rel="stylesheet" media="screen and (min-width: 721px) and (max-width: 1024px)" href="./css/1024.css">
+<link rel="stylesheet" media="screen and (min-width: 721px) and (max-width: 1024px)" href="../css/1024.css">
 <!-- PC -->
-<link rel="stylesheet" media="screen and (min-width: 1025px)" href="./css/pc.css">
+<link rel="stylesheet" media="screen and (min-width: 1025px)" href="../css/pc.css">
 
 </head>
 
@@ -48,7 +48,7 @@
 	<div class="header">
 		<!--로고, 메뉴-->
 		<div class="header-box"> <!--스타일을 입힐 수 있는 여지를 줌-->
-			<h1><a href="./index.html"><img src="./img/logo.png" alt="JinChaeEun"></a></h1>
+			<h1><a href="../index.html"><img src="../img/logo.png" alt="JinChaeEun"></a></h1>
 			<div class="tnb">
 				<ul class="tnb"> <!--tnb-->
 					<li><a href="#none">로그인</a></li>
@@ -62,7 +62,7 @@
 			<div class="gnb"> <!--general navigation bar-->
 				<ul>
 					<li><a href="#none">회사소개</a></li>
-					<li><a href="./bbs/notice_list.html">고객센터</a></li>
+					<li><a href="../bbs/notice_list.html">고객센터</a></li>
 					<li><a href="#none">예약하기</a></li>
 					<li><a href="#none">예약확인</a></li>
 				</ul>
