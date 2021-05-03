@@ -51,8 +51,8 @@
 			<h1><a href="../index.html"><img src="../img/logo.png" alt="JinChaeEun"></a></h1>
 			<div class="tnb">
 				<ul class="tnb"> <!--tnb-->
-					<li><a href="#none">로그인</a></li>
-					<li><a href="#none">회원가입</a></li>
+					<li><a href="../member/login.html">로그인</a></li>
+					<li><a href="../member/join.html">회원가입</a></li>
 					<!-- 					
 					<li><a href="#none">로그아웃</a></li>
 					<li><a href="#none">정보수정</a></li>
@@ -63,8 +63,8 @@
 				<ul>
 					<li><a href="#none">회사소개</a></li>
 					<li><a href="../bbs/notice_list.html">고객센터</a></li>
-					<li><a href="#none">예약하기</a></li>
-					<li><a href="#none">예약확인</a></li>
+					<li><a href="../booking/list.html">예약하기</a></li>
+					<li><a href="../booking/mypage.html">예약확인</a></li>
 				</ul>
 			</div>
 			

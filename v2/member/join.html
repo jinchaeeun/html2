@@ -1,0 +1,71 @@
+<!-- 상단 헤더 불러오기 -->
+<?php include('../sub_header.php'); ?>
+<style>
+	.join-box{width: 480px; margin: 30px auto; }
+	.join-box h1{text-align: center;}
+	.join-box .join{ max-width: 500px; margin: 20px auto; border: 1px solid #e1e1e1; padding: 20px; background: #fff; display: grid; }
+	.join-box .join span{margin-top: 10px;}
+	.join-box .join select{margin: 10px 0;}
+	.join-box .join input{margin: 10px 0; width: 100%; height: 40px; }
+	.join .gender{display: flex;}
+	.join .gender label{margin: 10px 10px 0 20px;}
+	.join input[type="radio"]{width: 18px; height: 18px;}
+	.join button{width: 100%; height: 40px; background: #90a17e; border: 1px solid #90a17e; color: #fff;}
+	.join .addr{display: flex;}
+	.addr button{margin-top: 10px; width: 40%;}
+	.join-box a{text-align: center;}
+
+	.button{width: 70px; margin:0 auto;}
+</style>
+
+<div class="join-box">
+	<h1>회원가입</h1>
+	<div class="join">
+		<span>아이디</span>
+		<input type="text" placeholder="아이디">
+		
+		<span>비밀번호</span>
+		<input type="password"  placeholder="비밀번호">
+		
+		<span>비밀번호 확인</span>
+		<input type="password"  placeholder="비밀번호 확인">
+		
+		<span>이름</span>
+		<input type="text" placeholder="이름">
+
+		<span>연락처</span>
+		<input type="text" placeholder="연락처">
+
+		<span>생년월일</span>						
+		<input type="text" placeholder="생년월일">
+		
+		<span>성별</span>
+		<div class="gender">
+			<label for>남</label>
+			<input type="radio" name="chk_gender" value="M">
+			<label for>여</label>
+			<input type="radio" name="chk_gender" value="W">
+		</div>
+		
+		<span>직업</span>
+		<select name id>
+			<option value>학생</option>
+			<option value>회사원</option>
+			<option value>기타</option>
+		</select>
+		
+		<span>주소</span>
+		<div class="addr">
+			<input type="text">
+			<button>검색</button>
+		</div>
+		<input type="text" placeholder="기본주소">
+		<input type="text" placeholder="상세주소">
+	</div>
+	<div class="button">
+		<a href="../index.html">이전</a>
+		<a href="../index.html">가입완료</a>
+	</div>
+</div>
+<!-- 하단 헤더 불러오기 -->
+<?php include('../sub_footer.php'); ?>

@@ -120,14 +120,14 @@ img {
 	
 	/*on 설정되어있는 탭에 표시해주기*/
 	.snb-wrap li.on span:before{width: 100%; left: 0;}
-	.snb-wrap li.on span:after{opacity: 1;}
+	.snb-wrap li.on span:after{opacity: 1; }
 	.snb-wrap li.on a{font-weight: 600;}
 	
 	.snb-wrap li > a{display: block; padding: 20px; font-size:15px; border-right: 1px solid #e1e1e1;}
 	.snb-wrap li > a span{display: block; position: relative;}
-	.snb-wrap li > a span:before{content:""; width: 0%; height: 3px; background: #000; position: absolute; left: 0; bottom: -10px; transition: all 0.3s}
+	.snb-wrap li > a span:before{content:""; width: 0%; height: 3px; background: #90a17e; position: absolute; left: 0; bottom: -10px; transition: all 0.3s}
 	.snb-wrap li > a span:after{
-		opacity:0; content:""; width: 0; height: 0; border-top: 0 solid transparent; border-bottom: 5px solid #000; border-left: 5px solid transparent; border-right: 5px solid transparent; 
+		opacity:0; content:""; width: 0; height: 0; border-top: 0 solid transparent; border-bottom: 5px solid #90a17e; border-left: 5px solid transparent; border-right: 5px solid transparent; 
 		position: absolute; left: 50%; transform:translateX(-50%); /*pos, left, trans 세개 한번에 쓰면 가운데 정렬이된다*/
 		bottom: -7px;
 	}
@@ -137,7 +137,7 @@ img {
 	.notice-box{max-width: 1200px; margin: 20px auto;}
 	
 	.notice-box li{display: table; width: 100%;}
-	.table-hd{border-top: 2px solid #000; background: #a19e7b; text-align: center;}
+	.table-hd{border-top: 2px solid #000; background: #90a17e; color: white; text-align: center;}
 	.table-bd{text-align: center;}
 	.notice-box li div{display: table-cell; width: 25%; border-bottom: 1px solid #000;}
 	
@@ -158,4 +158,4 @@ img {
 	
 	.search-box {text-align: right; margin: 10px 0;} box 자체 정렬 float:right;} /*요소들을 정리할 때는 text-align*/
 	.search-box input{width:100px; border: 1px solid #ccc; height: 30px;}
-	.search-box button{border: 1px solid #000; height: 30px; padding: 0 20px; background: #5b593f; color: #fff;}
+	.search-box button{border: 1px solid #90a17e; height: 22px; padding: 0 20px; background: #90a17e; color: #fff;}
