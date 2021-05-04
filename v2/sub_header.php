@@ -18,15 +18,19 @@
 <script src="../js/swiper.min.js"></script>
 <link rel="stylesheet" href="../js/swiper.min.css">
 
-<script src="../js/autofix.js"></script> <!-- jquery를 먼저 불러와야한다. -->
-
+<link rel="stylesheet" href="">
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<!--fullpage-->
+<!-- 스크롤시 fixed -->
+<script src="../js/autofix.js"></script> <!-- jquery를 먼저 불러와야한다. -->
+
+<!-- fullfage -->
+<script src="../js/fullpage.min.js"></script>
+<link rel="stylesheet" href="../js/fullpage.min.css">
 
 <link rel="stylesheet" href="../css/style.css">
 
@@ -48,7 +52,7 @@
 	<div class="header">
 		<!--로고, 메뉴-->
 		<div class="header-box"> <!--스타일을 입힐 수 있는 여지를 줌-->
-			<h1><a href="../index.html"><img src="../img/logo.png" alt="JinChaeEun"></a></h1>
+			<h1><a href="../index.html"><img src="https://www.yuhan-kimberly.co.kr/Images/main2020/common/logo_scroll.png" alt="JinChaeEun"></a></h1>
 			<div class="tnb">
 				<ul class="tnb"> <!--tnb-->
 					<li><a href="../member/login.html">로그인</a></li>
@@ -61,9 +65,9 @@
 			</div>
 			<div class="gnb"> <!--general navigation bar-->
 				<ul>
-					<li><a href="#none">회사소개</a></li>
+					<li><a href="../page/intro.html">회사소개</a></li>
 					<li><a href="../bbs/notice_list.html">고객센터</a></li>
-					<li><a href="../booking/list.html">예약하기</a></li>
+					<li><a href="../booking/list.html">숲 체험 예약</a></li>
 					<li><a href="../booking/mypage.html">예약확인</a></li>
 				</ul>
 			</div>

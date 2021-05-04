@@ -1,208 +1,141 @@
-.header{background: #d77300; overflow:hidden;}
+.header .gnb {
+    width: 100%;
+    clear: both;
+}
 
-.header .top-btn ul{ margin-top: 36px; margin-left: 30px;}
+.header .gnb > ul > li {
+    margin: 0;
+    width: 25%;
+}
 
-.header .logo h1 img{ width: 80px;}
-
-.menu > div > ul {
+.header .gnb > ul > li > a {
+    font-size: 13px;
     text-align: center;
-    border-top: 2px solid #d77300;
-    background: white;
 }
 
-.menu > div > ul > li a {
-    color: black;
-    display: block;
-    padding: 10px;
+.main-visual h2 {
+    font-size: 30px;
+    padding-top: 150px;
+}
+
+.main-visual p {
+    font-size: 16px;
+}
+
+.main-visual {
+    height: 374px;
+    background-position: 81% 100%;
+}
+
+.numbers-wrap {
+    padding: 50px 0;
+}
+
+.numbers h2 {
+    font-size: 29px;
+}
+
+.numbers p {
     font-size: 17px;
-    margin: 10px 40px;
 }
 
-.header .top-btn ul li a{
+.numbers ul li {
+    width: 42%;
+    margin: 10px 7px;
+}
+
+.numbers ul li p {
+    font-size: 11px;
+}
+
+.numbers ul li p i {
+    font-size: 10px;
+    font-style: normal;
+}
+
+.slide-banner .swiper-container {
+    margin: 24px auto 89px auto;
+}
+
+.slide-banner .swiper-slide img {
+    width: 100%;
+    height: 110px;
+}
+
+.m-g-box {
+    padding: 64px 0 40px 0;
+}
+.m-g-box h2 {
+    font-size: 33px;
+    color: #fffaea;
+}
+
+.main-gallery {
+    margin: 28px auto;
+}
+
+.main-gallery li {
+    width: 100%;
+	padding: 36px 18px 5px 18px;
+}
+
+.notice-wrap {
+	padding: 0 10px;
+}
+
+
+.gallery-box ul li:nth-child(3n+1) {
+    clear: unset;
+}
+.gallery-box ul li:nth-child(2n+1) {
+    clear: both;
+}
+
+.gallery-box li {
+    width: 50%;
     padding: 5px;
 }
 
-
-/* 모바일 전용 메뉴*/
-	.m-menu{display:block;}
-	.m-menu{position: absolute; right: 10px; top: 105px; z-index:9999;}
-	.menu-trigger a(display: block; width: 25px; height: 25px; position: relative;)
-
-	.menu-trigger {
-		
-	}
-	.menu-trigger,
-	.menu-trigger span {
-		display: inline-block;
-		transition: all .4s;
-		box-sizing: border-box;
-	}
-
-	.menu-trigger {
-		position: relative;
-		width: 38px;
-		height: 29px;
-		margin-right: 17px;
-		margin-bottom: 50px;
-	}
-
-	.menu-trigger span {
-		position: absolute;
-		left: 10px;
-		width: 100%;
-		height: 4px;
-		background-color: #fff;
-		border-radius: 4px;
-	}
-
-	.menu-trigger span:nth-of-type(1) {
-		top: 10px;
-	}
-
-	.menu-trigger span:nth-of-type(2) {
-		top: 17.5px;
-	}
-
-	.menu-trigger span:nth-of-type(3) {
-		bottom: 0;
-	}
-
-	/* type-11 */
-	/* 전체 메뉴를 감싸는 원 파형이 살며시 퍼지며 엑스버튼 만들기 */
-
-	.menu-trigger span.type11:nth-of-type(1) {
-		animation : menu-bar11-01 .5s forwards;
-	}
-
-	@keyframes menu-bar11-01 {
-		0% {
-			transform : translateY(20px) rotate(-45deg);
-		}
-		100% {
-			transform : translateY(0) rotate(0deg);
-		}
-	}
-	.menu-trigger span.type11:nth-of-type(2) {
-		animation : menu-bar11-02 .5s forwards;
-	}
+.section01-box h2 {
+    font-size: 26px;
+}
 
 
-	.menu-trigger.type11:after {
-		position : absolute;
-		top : 50%;
-		left : 50%;
-		display : block;
-		content : '';
-		width : 10px;
-		height : 10px;
-		margin : 0px 0 0 5px; /*상 우 하 좌*/
-		border-radius : 50%;
-		border : 1px solid rgba(255,255,255, 0.3);
-		transition : all .1s;
-		opacity : 0;
-	}
-	.menu-trigger.active-11:after {
-		animation : circle .5s;
-	}
+.join-box {
+    width: 370px;
+    margin: 30px auto;
+}
 
-	@keyframes circle {
-		0% {
-			transform : scale(0.1);
-			opacity : 0;
-		}
-		50% {
-			opacity : 1;
-		}
-		100% {
-			transform : scale(3.5);
-			opacity : 0;
-		}
-	}
-	.menu-trigger.active-11 span:nth-of-type(1) {
-		animation : active-menu-bar11-01 .5s .5s forwards;
-	}
+.button {
+    width: 100px;
+}
 
-	@keyframes active-menu-bar11-01 {
-		0% {
-			transform : translateY(0) rotate(0deg);
-		}
-		100% {
-			transform : translateY(15px) rotate(-45deg);
-		}
-	}
-	.menu-trigger.active-11 span:nth-of-type(2) {
-		animation : active-menu-bar11-02 .5s .5s forwards;
-	}
+.join-box a {
+    margin: 0 6px;
+}
 
-	@keyframes active-menu-bar11-02 {
-		0% {
-			opacity : 1;
-		}
-		100% {
-			opacity : 0;
-		}
-	}
-	.menu-trigger.active-11 span:nth-of-type(3) {
-		animation : active-menu-bar11-03 .5s .5s forwards;
-	}
+.section01-box {
+    padding-top: 110px;
+}
 
-	@keyframes active-menu-bar11-03 {
-		0% {
-			transform : translateY(0) rotate(0deg);
-		}
-		100% {
-			transform : translateY(0px) rotate(45deg);
-		}
-	}
+.section01-box p {
+    font-size: 14px;
+    margin-top: 10px;
+    padding: 0 113px;
+}
+
+#section0 {
+    background-position: center 110px;
+}
 
 
-
-/* 메뉴 좌측으로 밀기*/
-.menu {
-	background: white;
+/*스크롤 시 헤더에서 이상현상 해결 위해 처음부터 고정해버림 이후 바디에 헤더 높이만큼 여백을 줌*/
+.header {
     position: fixed;
-    z-index: 9999;
-    left: -100%;
-	width: 100%;
-	max-width: 200px;
-	height: 100%;
-	transition: all 0.3s;
-
-}
-
-.menu > div > ul > li {
-    display: block;
-	}
-
-.menu > div > ul > li a {
-    font-size: 15px;
-    margin: 5px 10px;
-	color: #000;
-	border-bottom: 1px solid #e1e1e1;
-}
-
-
-.menu > div > ul > li > ul.submenu {
-    position: relative;
-    background: #eb7e00bf;
-    border: 0px solid #ccc;
-}
-
-.menu > div ul > li ul.submenu a {
-    font-size: 12px;
-}
-
-.banner .swiper-container {
-    height: auto;
-}
-
-
-.bbs-box > div > .board-box {
-    float: none;
+    top: 0;
+    left: 0;
     width: 100%;
+    z-index: 9999;
 }
 
-.bbs-box > div > .right-banner {
-    float: none;
-    width: auto;
-}
+body{ padding-top: 110px;}

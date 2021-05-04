@@ -2,30 +2,6 @@
 <?php include('../sub_header.php'); ?>
 
 <style>
-	.gallery-box-wrap{text-align: center;}
-	.gallery-box-wrap .gallery-header{text-align: center; padding-top: 20px; margin-bottom: 10px; color: #45482a; display: inline-block;}
-	.gallery-box-wrap .gallery-header h2{font-size:35px;}
-	
-	.gallery-box-wrap .gallery-header h2:after{content:""; display: block; border-bottom: 5px solid #90a17e; width: 100%; margin: 10px auto; border-radius: 5px;}
-
-
-	.gallery-box{background: #a19e7b;}
-
-	.gallery-box {max-width: 1200px; margin: 50px auto;}
-	.gallery-box ul{overflow: hidden; }
-	.gallery-box li{float: left; width: 33.33%; padding: 31px;} /*margin을 주면 밀린다.*/
-	.gallery-box li > div {border: 2px solid #fffaea;}
-
-	.gallery-box li  .info {margin: 27px 10px;}
-	.gallery-box li  .info a{ color: #fffaea;}
-	.gallery-box li  .info p{color: #fffaea; margin: 10px 0; max-height: 50px; overflow: hidden;} /*긴 글자 숨기기*/
-	.gallery-box li  .info i{font-style: normal; color: #fffaea;}
-
-	.gallery-box ul li:nth-child(3n+1){clear:both;} /*4번째 이미지 위치 맞게 재정렬*/
-	
-	.gallery-box ul li .thum {text-align: center; background: #6d6b58; } /*이미지 크기는 안맞지만 이미지 전체를 볼 수 있음*/
-	.gallery-box ul li .thum img{height: 187px; }									/*윗줄 + 세로 높이까지 맞춰주면 width는 안 맞지만 다 보여짐. 대부분 이런 방식으로 처리*/
-	/*.gallery-box ul li .thum img{width: 100%; }										/*이미지 크기 맞추기*/
 
 </style>
 	<div class="snb-wrap">
@@ -59,7 +35,7 @@
 			</li>
 			<li>
 				<div>
-					<div class="thum"><img src="https://lh3.googleusercontent.com/proxy/RnM5Atk5EpfFuB3g4TT8uU2tnXEYlnafyExKolPS39DDtrY_3l6buFBh-pYoHCDIV885919UPzsGF-9ECfJLitSODbB3ObE9l44RhQ" alt="숲"></div>
+					<div class="thum"><img src="../img/forest.jpg" alt="숲"></div>
 					<div class="info">
 						<h3><a href="../bbs/gallery_view.html">숲은 마음의 고향입니다.</a></h3>
 						<p>산림청(청장 박종호)은 산림보호구역에서 ‘치유의 숲’ 조성이 가능하도록 규제를 완화한다고 20일 밝혔다. 산림보호구역 행위제한 예외사유에 치유의 숲 조성을 추가한 「산림보호법 시행령」일부개정안이 현재 입법예고 중이며, 오는 12월 중 시행될 예정이다.
@@ -148,11 +124,14 @@
 			</li>
 
 		</ul>
+
 	</div>
 	<div class="table-btn">
 		<a href="../bbs/gallery_write.html">글쓰기</a>
 	</div>
+	<style>
+		.table-btn{max-width: 1200px;}
+	</style>
 	
-
 <!-- 하단 헤더 불러오기 -->
 <?php include('../sub_footer.php'); ?>
